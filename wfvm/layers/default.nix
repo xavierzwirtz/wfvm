@@ -72,7 +72,7 @@ in
       bootstrapper = pkgs.fetchurl {
         name = "RESTRICTDIST-vs_Community.exe";
         url = "https://aka.ms/vs/16/release/vs_community.exe";
-        sha256 = "0b3csxz0qsafnvc0d74ywfpralwz8chv4zf9k07akpm8lp8ycgq0";
+        sha256 = "m3eAtmQc605iwFeNWes9vr7aj1o0dO0lMxawsATSRm4=";
       };
       # This touchy-feely "community" piece of trash seems deliberately crafted to break Wine, so we use the VM to run it.
       download-vs = wfvm.utils.wfvm-run {
@@ -93,7 +93,7 @@ in
 
         outputHashAlgo = "sha256";
         outputHashMode = "recursive";
-        outputHash = "0ic3jvslp2y9v8yv9mfr2mafkvj2q5frmcyhmlbxj71si1x3kpag";
+        outputHash = "ABXOeEen/6KI0sxV063ZDl6WPjCynNSn5nkp06h9x4g=";
 
         phases = [ "buildPhase" ];
         buildInputs = [ download-vs ];
